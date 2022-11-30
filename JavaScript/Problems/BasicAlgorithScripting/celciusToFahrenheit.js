@@ -4,8 +4,8 @@ You are given a variable celsius representing a temperature in Celsius. Use the 
 } celsius 
  */
 function convertCtoF(celsius) {
-    let fahrenheit;
-    return fahrenheit;
-  }
-  
-  convertCtoF(30);
+  let fahrenheit = (celsius * 9) / 5 + 32;
+  return fahrenheit;
+}
+
+console.log(convertCtoF(10));
