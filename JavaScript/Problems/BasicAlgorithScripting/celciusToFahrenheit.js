@@ -9,3 +9,5 @@ function convertCtoF(celsius) {
 }
 
 console.log(convertCtoF(10));
+console.log(convertCtoF(0));
+console.log(convertCtoF(100));
