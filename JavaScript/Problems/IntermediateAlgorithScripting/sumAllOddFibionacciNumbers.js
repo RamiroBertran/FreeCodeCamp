@@ -13,8 +13,44 @@ sumFibs(4) should return 5.
 sumFibs(75024) should return 60696.
 sumFibs(75025) should return 135721.
 */
-function sumFibs(num) {
-  return num;
-}
 
-sumFibs(4);
+
+function sumFibs(num) {
+let n = []; 
+let fibo = []; 
+let j = 2; 
+let i = 0; 
+for(i; i <= num; i++){
+    if(i < 2){
+    n.push(i); 
+    fibo.push(i); 
+    } else if(i >=  2){
+    n.push(i); 
+        while(j <= i){
+        fibo.push(fibo[j - 1] + fibo[j - 2]); 
+        j++; 
+        }
+    }
+}
+let oddd = []; 
+let sum = 0; 
+for(let i = 0; i < fibo.length; i++){
+        if(fibo[i] <= num){
+            oddd.push(fibo[i]); 
+        }        
+    }
+const odd = (arr) =>{
+let sum = 0; 
+for(let i = 0; i < arr.length; i++){
+        if(arr[i] % 2 == 1){
+            sum += arr[i]; 
+        }
+    }
+    return sum; 
+}  
+console.log(n); 
+console.log(fibo); 
+return odd(oddd); 
+};
+
+console.log(sumFibs(10));

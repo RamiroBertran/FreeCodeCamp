@@ -11,7 +11,30 @@ convertHTML("Hamburgers < Pizza < Tacos") should return the string Hamburgers &l
 
 */
 function convertHTML(str) {
-  return str;
+let arr = str.split(""); 
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] == "&"){
+            arr[i] = "&amp;"
+        }
+    }; 
+
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] == "'"){
+            arr[i] = "&apos;";
+        }else if(arr[i] == "<"){
+            arr[i] = "&lt;"
+        }else if(arr[i] == ">"){
+            arr[i]  = "&gt;"
+        }else if(arr[i] == '"'){
+            arr[i] = "&quot;"; 
+        }
+    }
+        return arr.join(""); 
 }
 
-convertHTML("Dolce & Gabbana");
+console.log(convertHTML("Dolce & Gabbana"));
+console.log(convertHTML("Hamburgers < Pizza < Tacos")); 
+console.log(convertHTML("Sixty > twelve")); 
+console.log(convertHTML('Stuff in "quotation marks"')); 
+console.log(convertHTML("Schindler's List")); 
+
