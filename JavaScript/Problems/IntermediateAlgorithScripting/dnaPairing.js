@@ -13,7 +13,24 @@ pairElement("TTGAG") should return [["T","A"],["T","A"],["G","C"],["A","T"],["G"
 pairElement("CTCTA") should return [["C","G"],["T","A"],["C","G"],["T","A"],["A","T"]]
 */
 function pairElement(str) {
-  return str;
+let t = ["T", "A"]; 
+let a = ["A", "T"]; 
+let c = ["C", "G"]; 
+let g = ["G", "C"];     
+let arr = str.split(""); 
+let pairs = []; 
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] == "G"){
+            pairs.push(g); 
+        } else if(arr[i] == "C"){
+            pairs.push(c); 
+        } else if(arr[i] == "A"){
+            pairs.push(a); 
+        } else if(arr[i] == "T"){
+            pairs.push(t); 
+        }
+    }
+  return pairs;
 }
 
-pairElement("GCG");
+console.log(pairElement("GCG"));

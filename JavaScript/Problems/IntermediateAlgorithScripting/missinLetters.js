@@ -11,7 +11,23 @@ fearNotLetter("bcdf") should return the string e.
 
 */
 function fearNotLetter(str) {
-  return str;
+  let miss = str.split("");
+  let az = "abcdefghijklmnopqrstuvwxyz";
+  let arr = az.split("");
+  let newarr;
+  for (let i = 0; i < arr.length; i++) {
+    if (miss[0] == arr[i]) {
+      newarr = arr.splice(i);
+      for (let j = 0; j < newarr.length; j++) {
+        if (miss[j] !== newarr[j]) {
+          return newarr[j];
+        }
+      }
+    }
+  }
+  return undefined;
 }
 
-fearNotLetter("abce");
+console.log(fearNotLetter("abde"));
+console.log(fearNotLetter("abcdefghijklmnopqrstuvwxyz"));
+console.log(fearNotLetter("stvwx"));

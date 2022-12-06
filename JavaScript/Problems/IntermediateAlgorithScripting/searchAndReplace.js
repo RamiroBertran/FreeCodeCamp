@@ -12,8 +12,22 @@ Note: Preserve the case of the first character in the original word when you are
 
 */
 function myReplace(str, before, after) {
-  return str;
+    let arr = str.split(" "); 
+
+    if(before[0] ==  before[0].toUpperCase()){
+        after = after[0].toUpperCase() + after.substr(1); 
+    } else if(before[0] == before[0].toLowerCase()){
+        after = after[0].toLowerCase() + after.substr(1); 
+    }
+
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] == before){
+            arr[i] = after; 
+        }
+    }
+  return arr.join(" ");
 }
 
-myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+console.log(myReplace("A quick brown fox jumped over the lazy dog", "jumped", "Leaped"));
 console.log(myReplace("Let us go to the store", "store", "mall")); // should return let us go to the mall;
+console.log(myReplace("This has a spellngi error", "spellngi", "spelling")); 

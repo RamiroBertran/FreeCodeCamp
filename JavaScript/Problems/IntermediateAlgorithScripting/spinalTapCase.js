@@ -1,3 +1,4 @@
+// This code does not work in cases such havin more than one spaces or more than one dash, and probably much mores. I just try to solved the problem with the knowledge I had. 
 function spinalCase(str) {
     let first; 
     let segundo; 
@@ -14,7 +15,6 @@ function spinalCase(str) {
             segundo[i] = segundo[i][0].toLowerCase() + segundo[i].substring(1); 
         }
         tercero = segundo.join(" ").split(""); 
-
         for(let i = 0; i < tercero.length;i++){
             if(tercero[i] !== tercero[i].toUpperCase() || tercero[i] == " "){
                 cuarto.push(tercero[i])
