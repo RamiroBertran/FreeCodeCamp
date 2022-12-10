@@ -53,4 +53,4 @@ console.log(fibo);
 return odd(oddd); 
 };
 
-console.log(sumFibs(10));
+console.log(sumFibs(800));
