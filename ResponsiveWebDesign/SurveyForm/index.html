@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>xxx</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <h1>Survery Form</h1>
+    <p>Some text in here..</p>
+    <form action="index_submit" method="get" accept-charset="utf-8">
+  <fieldset>
+    <legend>This inforomation is required</legend>
+    
+     <label for="name" id="name-label">Enter Your Name: <input type="text" name="name" id="name"/></label> 
+
+     <label for="email" id="email-label"> Enter Your Email: <input type="email" name="email" id="email"/></label>
+
+     <label for="age" id="age-label"> Enter Your Age (years): <input type="number" name="age" id="age" min="13" max="120"/></label>
+</fieldset>
+    
+  <fieldset>
+    <legend>This will improve the search engaine to show content to you</legend>
+   <label for="option">
+     <select id="option">
+       <option value="option">option</option>
+       <option value="option">option</option>
+       <option value="option">option</option>
+       <option value="option">option</option>
+       <option value="option">option</option>
+     </select>
+   </label> 
+
+   <label for="programming"> <input type="checkbox" value="programming" name="programming" id="programming"/> Programming</label>
+   <label for="programming"> <input type="checkbox" value="programming" name="programming" id="programming"/> Programming</label>
+   <label for="programming"> <input type="checkbox" value="programming" name="programming" id="programming"/> Programming</label>
+   <label for="programming"> <input type="checkbox" value="programming" name="programming" id="programming"/> Programming</label>
+   <label for="programming"> <input type="checkbox" value="programming" name="programming" id="programming"/> Programming</label>
+   </fieldset>
+   <fieldset>
+     <legend>Write something you want to tell us</legend>
+     <label for="textarea"> 
+       <textarea name="tell-us" id="tell-us" cols="30" rows="3" placeholder="write something in here"></textarea>
+     </label>
+     
+   </fieldset>
+    </form>
+  </body>
+</html>

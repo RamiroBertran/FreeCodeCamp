@@ -50,7 +50,7 @@ for(let i = 0; i < arr.length; i++){
 }  
 console.log(n); 
 console.log(fibo); 
-return odd(oddd); 
+return "la suma de los impares son " + odd(oddd); 
 };
 
-console.log(sumFibs(800));
+console.log(sumFibs(10));

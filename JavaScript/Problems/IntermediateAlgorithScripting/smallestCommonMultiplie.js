@@ -78,3 +78,52 @@ for(let i = 0; i < hcf.length; i++){
     mcm.push(Math.abs(a * b) / hcf[i]); 
    }
 */
+
+
+/*
+ * The above code did't work. I am not going to remove it, since a want to show you how difference I make my code this time. 
+ */
+
+function smallestCommons(arr) {
+  arr.sort((a,b) => a - b); 
+  let [a,b] = [arr[0], arr[1]]; 
+  let range = []; 
+  let n = 1; 
+  let m = 1; 
+  for(let i = a; i <= b; i++){
+    range.push(i); 
+  }
+  let verSi = (ran, x, y) => {
+    let n = 0; 
+    if(x != y){
+      return false; 
+    }
+    ran.forEach(item => {if(x % item == 0 && y % item == 0){
+        n++;
+    }});
+    if(n == ran.length){
+      return true;
+    } else {
+      return false; 
+    }
+  }
+  let i = a; 
+  // a < b; 
+  // mulitplicar a por n. A n hay que sumarle uno si es que no es igual a b, y a "a", hay que recetear el valor a su valor inicial; 
+  for(i; !verSi(range, i, b); i *= n){ // i = 1; 1 *= 2; n++; 
+  //console.log("valor de i: " + i); 
+  //console.log("valor de b: " + b); 
+      if(b < i){
+      b = arr[1]; 
+      b *= m; 
+      m++; 
+    }
+      i = arr[0]; 
+      n++; 
+  }
+  return i; 
+}
+
+console.log(smallestCommons([23, 18]));
+
+

@@ -9,12 +9,16 @@ function whatIsInAName(collection, source) {
     );
   }
 
+
   for (let i = 0; i < container.length; i++) {
     if (container[i].length === 0) {
       return container[i];
     }
   }
+
+
   arr = [...container[0]];
+
   if (prop.length > 1) {
     for (let i = 0; i < prop.length; i++) {
       let j = 0;

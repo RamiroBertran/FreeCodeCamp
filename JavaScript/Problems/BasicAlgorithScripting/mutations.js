@@ -10,7 +10,7 @@ function mutation(arr) {
   for (let i = 0; i < newarr[1].length; i++) {
     if (newarr[0].indexOf(newarr[1][i]) < 0) {
       return false;
-    }
+    }0
   }
   return true;
 }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>CatPhotoApp</title>
+  </head>
+  <body>
+    <h1>CatPhotoApp</h1>
+    <section>
+      <h2>Cat Photos</h2>
+      <p><a href="http://www.url.com" target="_blank">more cat photos.</a></p>
+    </section>
+    <section>
+      <h2>Cat lists</h2>
+      <h3>Things cats love</h3>
+      <ul>
+        <li>lasagna</li>
+        <li>fish</li>
+        <li>hunt</li>
+      </ul>
+      <figure style="padding:0; margin:10px;">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F06%2F08%2F4b%2F06084b6c984a5cf3d930335e76c60aa9.jpg&f=1&nofb=1&ipt=fa4f469ddc5229af0b450f68efe133666b251d96ebbaaf116992d44c66395c47&ipo=images" alt="Cat looking right at a lasagna" style="width:250px; height:auto;"/>
+        <figcaption>Cats <em>love</em> lasagna</figcaption>
+      </figure>
+      <h3>Things cats hate</h3>
+      <ol>
+        <li>Me</li>
+        <li>dogs</li>
+        <li>them self</li>
+      </ol>
+      <figure style="margin:10px; padding:0;">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.buzzfeed.com%2Fbuzzfeed-static%2Fstatic%2F2015-05%2F16%2F10%2Fcampaign_images%2Fwebdr15%2Fsigns-that-cats-just-hate-everything-the-world-ha-2-5303-1431785047-15_dblbig.jpg&f=1&nofb=1&ipt=b49c85394bc99eb6ee4981b69f627a52ca59f3bc5dc43bf38ec86b61b15a058f&ipo=images" alt="Cat hating world" style="width:350px"/> 
+        <figcaption>Cats <strong>hate</strong> other cats</figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>Cats form</h2>
+      <form action="index_submit" method="get" accept-charset="utf-8">
+       <fieldset id="indoor_or_outdoor" class="">
+         <legend>Indoor or Outdoor</legend>
+         <input type="radio" value="indoor" name="indoor-outdoor" id="indoor-outdoor" checked/><label for="indoor-outdoor"> Indoor</label>
+         <input type="radio" value="outdoor" name="indoor-outdoor" id="indoor-outdoor"/><label for="indoor-outdoor"> Outdoor</label>
+       </fieldset> 
+
+       <fieldset id="what's_your_cat_personality_like?" class="">
+         <legend>What's your cat personality like?</legend>
+         
+          <input type="checkbox" value="lazy" name="personality" id="lazy" checked/><label for="lazy" > Lazy</label> 
+
+          <input type="checkbox" value="energetic" name="personality" id="energetic"/><label for="energetic"> Energetic</label>
+
+          <input type="checkbox" value="loving" name="personality" id="loving"/><label for="loving"> Loving</label>
+
+       </fieldset>
+      </form>
+    </section>
+
+    <footer>
+      Copyright to <a href="www.freecodecamp.com" target="_blank">freecodecamp</a>
+    </footer>
+  </body>
+</html>
