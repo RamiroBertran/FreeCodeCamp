@@ -1,32 +1,24 @@
-function addTogether(x, y){
-let reg = /[a-z]/ig; 
-
-    if(reg.test(x)){
+function addTogether(...arr) {
+  let sum = 0; 
+  if(arr.length == 1){
+    if(!Number.isInteger(arr[0])){
+      return undefined;
+    }
+    return function(b){
+      if(Number.isInteger(b)){
+        return arr[0] + b; 
+      } else {
+        return undefined;
+      }
+    }
+  } else {
+    sum += arr[0] + arr[1]; 
+      if(Number.isInteger(sum)){
+        return sum; 
+      } else {
         return undefined; 
     }
-
-    if(y === undefined){
-        return function(z){
-            if(typeof(x) !== typeof(z)){
-                return  undefined;
-            } else {
-                return x + z; 
-            }
-        }
-
-    } else if(typeof(x) !== typeof(y)){
-            return undefined; 
-
-    } else {
-            return x + y; 
-    }
+  }
+ 
 }
-
-
-console.log(addTogether(2)(3));
-console.log(addTogether(5,7)); 
-console.log(addTogether(23, 30));
-console.log(addTogether("https://www.youtube.com/watch?v=dQw4w9WgXcQ"));
-console.log(addTogether("2", 3))
-console.log(addTogether(2)([3]));
-console.log(addTogether(5, undefined))
+console.log(addTogether("str"));
