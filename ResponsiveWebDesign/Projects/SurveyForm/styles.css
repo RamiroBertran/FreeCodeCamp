@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
+:root {
+  --bc-color:radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+  --form-color:radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);;
+}
+html {
+  font-size:62.5%;
+  font-family:'Mukta', sans-serif;
+}
+body {
+  background-position:center;
+  background:var(--bc-color);
+}
+
+#title {
+  font-size:3.3rem;
+}
+
+#description {
+  font-size:2rem;
+  margin-top:-10px;
+  margin-bottom:20px;
+}
+
+h1, p {
+  text-align:center;
+  font-weight:bold;
+  color:white;
+}
+
+#survey-form { 
+  max-height:100vh; 
+  max-width:650px;
+  min-width:500px;
+  margin:0 auto; 
+  font-size:1.85rem;
+  border:none;
+  padding:10px;
+  background-color:white;
+  overflow:auto;
+  background:var(--form-color);
+  border-radius:20px;
+  opacity:0.88;
+}
+label {
+  display:block;
+}
+input,
+textarea,
+select {
+  width:100%;
+  padding:10px 0;
+  margin:10px auto;
+  border:none;
+  resize:none;
+  background:var(--bc-color);
+  color:white;
+  border-radius:5px;
+  font-size:1.5rem;
+}
+
+.role {
+  margin-top:-15px;
+}
+select {
+  padding-left:5px;
+}
+
+::placeholder {
+  font-size:1.5rem;
+}
+
+fieldset {
+  border:none;
+}
+
+.inline {
+  width:unset;
+  vertical-align:middle;
+}
+
+input[type="submit"] {
+  width:60%;
+  font-size:1.8rem;
+  margin:1em auto;
+  display:block;
+  background:linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 100%);
+  border-radius:10px;
+}
+
+
+
