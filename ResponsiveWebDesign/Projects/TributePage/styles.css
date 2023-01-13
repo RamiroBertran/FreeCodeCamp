@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+* {
+  /*border:1px solid;*/
+}
+:root {
+  --grandma-color:#FF0A54;
+}
+html {
+  font-size:62.5%; 
+  font-family:'Raleway', sans-serif;
+  box-sizing:border-box;
+  color:white;
+}
+body {
+  margin:0; 
+  max-width:100%;
+  height:100%;
+  padding:20px 10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color:#FAE0E4;
+}
+#main {
+  width:100%;
+  height:100%; 
+  background-color:#FBB1BD;
+  border-radius:5px; 
+}
+
+.center {
+  text-align:center;
+}
+
+#title {
+  font-size:3rem;
+  transition-duration:0.5s;
+}
+
+.description {
+  font-size:1.5rem;
+}
+
+
+#img-div {
+  margin:0 auto;
+  max-width:95%;
+  min-height:300px;
+  padding-top:20px;
+  display:flex; 
+  align-items:center;
+  flex-flow:column wrap;
+  justify-content:end;
+  background-color:#FAE0E4;
+}
+
+img {
+display:block;
+}
+
+#image {
+  max-width:50%;
+  height:auto;
+  padding-top:10px;
+}
+
+#img-caption {
+  width:100%;
+  height:5vh;
+  text-align:center;
+  font-size:1.5rem;
+  font-style:italic;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+h2 {
+  font-size:2rem;
+  margin-top:50px;
+}
+#tribute-info { 
+  display:block;
+  margin:0 auto;
+  max-width:65%;
+  text-align:center;
+  line-height:2.2rem;
+}
+
+
+#tribute-info li {
+padding:10px;
+letter-spacing:0.2px;
+font-size:1.3rem;
+}
+
+h1:hover {
+    color:var(--grandma-color);
+    cursor:pointer;
+}
+
+.last {
+    display:block;
+    margin:0 auto; 
+    padding:20px 0 40px 0; 
+    font-size:1.3rem;
+    width:70%;
+}
+
+#tribute-link {
+    color:#fff;
+    transition:0.2s;
+}
+
+#tribute-link:hover {
+    color:var(--grandma-color);
+}
+
+@media (max-width:770px){
+#image {
+    max-width:100%;
+}
+}
+
+@media (max-width:500px){
+#tribute-info { 
+  display:block;
+  margin:0 auto;
+  max-width:90%;
+  text-align:justify;
+  padding-right:20px;
+}
+.last {
+    display:block;
+    margin:0 auto; 
+    text-align:justify;
+    padding:20px 0 40px 0; 
+    font-size:1.3rem;
+    width:90%;
+}
+}

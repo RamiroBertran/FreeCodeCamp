@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+:root {
+--color-blue:#0a2b4c;
+}
+html {
+    font-size:62.5%; 
+}
+
+body {
+    box-sizing:border-box;
+    padding:0; 
+    margin:0; 
+    max-width:100%; 
+    height:100%; 
+    display:flex;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+#navbar {
+flex:auto;
+order:1; 
+}
+
+#nav-header {
+width:230px;
+position:fixed;
+top:0; 
+bottom:0; 
+border-right:3px solid var(--color-blue);
+}
+
+#nav-header ul {
+    padding:0;
+    list-style:none;
+    font-size:1.3rem;
+}
+
+
+#nav-header ul li {
+    padding:10px;
+    margin-left:10px;
+}
+
+#title  {
+    margin-left:-10px;
+    text-align:center;
+    font-size:2.2rem;
+    font-weight:200;
+    margin-top:-10px;
+    margin-bottom:3px;
+    color:#091827;
+}
+#nav-header ul li a {
+    text-decoration:none;
+    color:#3a3b3c;
+}
+
+.divider {
+border-bottom:1.5px solid var(--color-blue);
+}
+
+#main-doc {
+width:calc(100% - 230px); 
+height:100%;
+order:2; 
+height:200vh;
+}
+
+.main-section {
+    padding:0 30px;
+}
+section:first-child  {
+    font-size:2rem;
+    font-weight:200;
+    color:var(--color-blue);
+}
+
+p {
+    font-size:1.19rem;
+    color:#3a3b3c;
+    line-height:20px;
+    margin-left:25px;
+}
+
+#main-doc section ul {
+    font-size:1.19rem;
+    color:#3a3b3c;
+    margin-left:35px;
+}
+
+#Introduction {
+}
+
+#main-doc section ul li {
+    padding:5px;
+}
+
+#Reference {
+    padding-bottom:10px;
+}
+#Reference ul li  {
+    margin-top:-10px;
+}
+
+#Reference  ul li a:hover {
+    color:var(--color-blue);
+}
+.box {
+    width:90%;
+    margin:0 auto;
+    background-color:#0a2b4c;
+    color:#fff;
+    padding:20px;
+    border-radius:5px;
+}
+
+code {
+    font-size:1rem;
+}
+
+
+@media only screen and (max-width:750px){
+#nav-header {
+    display:block;
+    position:absolute;
+    height:300px;
+    overflow:auto;
+    width:100%;
+    text-align:center;
+    border-bottom:1px solid black;
+}
+
+
+#main-doc {
+top:300px;
+position:absolute;
+display:block;
+margin:0 auto;
+width:100%;
+}
+}
+
+
+@media only screen and (max-width:400px){
+#main-doc ul {
+     padding:5px!Important; 
+     margin-left:10px!Important;
+     }
+#nav-header {
+    display:block;
+    position:absolute;
+    height:300px;
+    overflow:auto;
+    width:100%;
+    text-align:center;
+    border-bottom:1px solid black;
+}
+
+
+#main-doc {
+top:300px;
+position:absolute;
+display:block;
+margin:0 auto;
+width:100%;
+}
+}
+
